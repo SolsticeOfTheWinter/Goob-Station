@@ -19,9 +19,6 @@
       enum.StationMapUiKey.Key:
         type: StationMapBoundUserInterface
         requireInputValidation: false
-      enum.StationMapUiKey.Key:
-        type: HealthAnalyzerBoundUserInterface
-        requireInputValidation: false
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
     layers:
@@ -50,7 +47,6 @@
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
-    - Common
   - type: ActiveRadio
     channels:
     - Binary
@@ -170,15 +166,3 @@
       icon: { sprite: Interface/Actions/pai-map.rsi, state: icon }
       event: !type:OpenUiActionEvent
         key: enum.StationMapUiKey.Key
-        
-- type: entity
-  id: ActionPAIBiometrics Scan
-  name: Biometrics Scan
-  description: Scan your owner, or a nearby creatures, biometrics.
-  components:
-    - type: InstantAction
-      checkCanInteract: false
-      checkConsciousness: false
-      icon: { sprite: Interface/Actions/pai-map.rsi, state: icon }
-      event: !type:OpenUiActionEvent
-        key: enum.HealthAnalyzerUiKey.Key
