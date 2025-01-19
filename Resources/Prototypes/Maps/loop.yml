@@ -1,11 +1,7 @@
 - type: gameMap
   id: Loop
   mapName: 'Loop Station'
-<<<<<<< HEAD
   mapPath: /Maps/_Goobstation/loop.yml # Goobstation
-=======
-  mapPath: /Maps/loop.yml
->>>>>>> parent of 215868ef74 (Edited loop.)
   minPlayers: 30
   maxPlayers: 70
   stations:
