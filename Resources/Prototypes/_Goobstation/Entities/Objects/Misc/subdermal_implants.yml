@@ -16,8 +16,18 @@
   - type: FlashOnTrigger
     range: 15
   - type: SpawnOnTrigger
-    proto: EffectFlashBluespace
-    proto2: BluespaceLifeline
+    proto: BluespaceLifeline
+  - type: PointLight
+    enabled: true
+    color: "#0000ff"
+    energy: 8
+    radius: 6
+    softness: 1
+    offset: "0, 0"
+  - type: SoundOnTrigger
+    sound:
+    path: /Audio/Effects/Lightning/lightningbolt.ogg
+
   - type: Tag
     tags:
     - SubdermalImplant
