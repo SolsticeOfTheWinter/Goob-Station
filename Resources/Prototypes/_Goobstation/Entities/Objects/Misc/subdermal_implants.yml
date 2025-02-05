@@ -13,12 +13,11 @@
     - Dead
   - type: TriggerImplantAction
   - type: DeleteParentOnTrigger
-  - type: SpawnOnTrigger
-    proto: BluespaceLifeline
   - type: FlashOnTrigger
     range: 15
   - type: SpawnOnTrigger
     proto: EffectFlashBluespace
+    proto2: BluespaceLifeline
   - type: Tag
     tags:
     - SubdermalImplant
